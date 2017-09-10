@@ -9,6 +9,10 @@
   font-family: ptsansbold;
   src: url('../font/ptsansbold.woff');
 }
+@keyframes form_animation {
+   0%   {transform: translateY(-500px);}
+   100% {transform: translateY(40px);}
+}
 html {
   box-sizing: border-box;
 }
@@ -367,10 +371,6 @@ list-style: none;
   animation-name: form_animation;
   animation-duration: 0.6s; 
 }
-@keyframes form_animation {
-   0%   {transform: translateY(-500px);}
-   100% {}
-  }
 
 
 .search_data label {
@@ -442,7 +442,7 @@ list-style: none;
 .search_people_number_wrapper_2 {
   width: 50%;
   display: flex;
-  align-items:center;
+  align-items: center;
 
 }
 .search_people_number_wrapper_1 label,
@@ -854,8 +854,12 @@ footer {
   background-color: rgb(255, 255, 255);
   display: flex;
   padding: 30px 73px 28px 73px;
-
+  position: relative;
   border-bottom: 1px solid #e5e5e5;
+}
+.result .ico_wrapper{
+  position: absolute;
+  right: 50px;
 }
 .sorting {
   list-style: none;
