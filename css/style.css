@@ -91,7 +91,11 @@ a {
   padding: 0px 72px 0px 72px;
 }*/
 .site_navigation {
+  display: -webkit-flex;
+  display: -moz-flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
   flex-wrap: wrap;
   align-items: center;
 
@@ -223,8 +227,12 @@ a {
    transform: scaleY(1.55);
 }
 .item {
+  display: -webkit-flex;
+  display: -moz-flex;
   display: flex;
   height: 255px;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
   flex-direction: row;
   overflow: hidden;
 }
@@ -234,10 +242,14 @@ a {
   background-color: rgb(255, 255, 255);
 }
 .reason_list {
-display: flex;
-flex-direction: row;
-margin: 0;
-padding: 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
 
 list-style: none;
 }
@@ -435,12 +447,16 @@ list-style: none;
   margin-bottom: 54px;
 }
 .search_people_number {
+  display: -webkit-flex;
+  display: -moz-flex;
   display: flex;
 }
 
 .search_people_number_wrapper_1,
 .search_people_number_wrapper_2 {
   width: 50%;
+  display: -webkit-flex;
+  display: -moz-flex;
   display: flex;
   align-items: center;
 
@@ -553,7 +569,11 @@ footer {
 }
 
 footer {
+  display: -webkit-flex;
+  display: -moz-flex;
   display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
   flex-direction: row;
   align-items: center;
 }
@@ -574,7 +594,11 @@ footer {
   width: 165px;
 }
 .footer_social ul {
+  display: -webkit-flex;
+  display: -moz-flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 150px;
@@ -585,6 +609,8 @@ footer {
 }
 
 .social_button {
+  display: -webkit-flex;
+  display: -moz-flex;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -606,6 +632,8 @@ footer {
 }
 
 .footer_copyright {
+  display: -webkit-flex;
+  display: -moz-flex;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -654,6 +682,8 @@ footer {
 }
 
 .filter {
+  display: -webkit-flex;
+  display: -moz-flex;
   display: flex;
   padding: 26px 73px 0px 10px;
   justify-content: space-between;
@@ -852,6 +882,8 @@ footer {
 /* фильтр результат */
 .result {
   background-color: rgb(255, 255, 255);
+  display: -webkit-flex;
+  display: -moz-flex;
   display: flex;
   padding: 30px 73px 28px 73px;
   position: relative;
@@ -866,6 +898,8 @@ footer {
   font-size: 12px;
   line-height: 1.5;
 
+  display: -webkit-flex;
+  display: -moz-flex;
   display: flex;
   justify-content:space-between;
   width: 275px;
@@ -912,6 +946,8 @@ footer {
   background-color: rgb(255, 255, 255);
 }
 .hotel {
+  display: -webkit-flex;
+  display: -moz-flex;
   display: flex;
   min-height: 150px;
   /*margin: 0px 73px;*/
@@ -928,19 +964,28 @@ footer {
 }
 
 .booking_hotel_wrapper {
+  display: -webkit-flex;
+  display: -moz-flex;
   display: flex;
 }
 .hotel_wrapper {
+ display: -webkit-flex;
+  display: -moz-flex;
   display: flex;
-  flex-direction:column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
   align-items: flex-start;
-
   padding: 0px 6px 0px 30px;
   margin: 0;
 }
 .booking_wrapper {
+  display: -webkit-flex;
+  display: -moz-flex;
   display: flex;
-  flex-direction:column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
   align-items: flex-start;
 
   margin: 0;
@@ -1026,8 +1071,12 @@ footer {
   padding: 2px 13px;
 }
 .rating {
+ display: -webkit-flex;
+  display: -moz-flex;
   display: flex;
-  flex-direction:column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
   align-items: flex-end;
   margin-left: auto;
 }
