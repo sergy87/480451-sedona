@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
@@ -28,50 +28,50 @@
             <section class="filters">
                 <h2 class="visually_hidden">Фильтр отелей</h2>
                 <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-                    <fieldset class="infrastructure">
-                        <legend>Инфраструктура:</legend>
+                    <div class="infrastructure">
+                        <div>Инфраструктура:</div>
                         <ul>
                             <li class="filter_option">
-                                <input class="visually_hidden filter_checkbox" type="checkbox" name="pool" id="filter_pool" checked>
-                                <label for="filter_pool">БАССЕЙН</label>
+                                <input class="filter_item visually_hidden filter_checkbox" type="checkbox" name="pool" id="filter_pool" checked>
+                                <label class="filter_item" for="filter_pool">БАССЕЙН</label>
                             </li>
                             <li class="filter_option">
-                                <input class="visually_hidden filter_checkbox" type="checkbox" name="parking" id="filter_parking">
-                                <label for="filter_parking">ПАРКОВКА</label>
+                                <input class="filter_item visually_hidden filter_checkbox" type="checkbox" name="parking" id="filter_parking">
+                                <label class="filter_item" for="filter_parking">ПАРКОВКА</label>
                             </li>
                             <li class="filter_option">
-                                <input class="visually_hidden filter_checkbox" type="checkbox" name="wifi" id="wifi">
-                                <label for="wifi">WI-FI</label>
+                                <input class="filter_item visually_hidden filter_checkbox" type="checkbox" name="wifi" id="wifi">
+                                <label class="filter_item" for="wifi">WI-FI</label>
                             </li>
                         </ul>
-                    </fieldset>
+                    </div>
 
-                    <fieldset class="housing">
-                        <legend>Тип жилья:</legend>
+                    <div class="housing">
+                        <div>Тип жилья:</div>
                         <ul>
                             <li class="filter_option">
-                                <input class="visually_hidden filter_checkbox" type="checkbox" name="hotel" id="hotel" checked>
-                                <label for="hotel">ГОСТИНИЦА</label>
+                                <input class="filter_item visually_hidden filter_checkbox" type="checkbox" name="hotel" id="hotel" checked>
+                                <label class="filter_item" for="hotel">ГОСТИНИЦА</label>
                             </li>
                             <li class="filter_option">
-                                <input class="visually_hidden filter_checkbox" type="checkbox" name="motel" id="motel" checked>
-                                <label for="motel">МОТЕЛЬ</label>
+                                <input class="filter_item visually_hidden filter_checkbox" type="checkbox" name="motel" id="motel" checked>
+                                <label class="filter_item" for="motel">МОТЕЛЬ</label>
                             </li>
                             <li class="filter_option">
-                                <input class="visually_hidden filter_checkbox" type="checkbox" name="apartments" id="apartments" checked>
-                                <label for="apartments">АПАРТАМЕНТЫ</label>
+                                <input class="filter_item visually_hidden filter_checkbox" type="checkbox" name="apartments" id="apartments" checked>
+                                <label class="filter_item" for="apartments">АПАРТАМЕНТЫ</label>
                             </li>
                         </ul>
-                    </fieldset>
+                    </div>
 
                     <div class="range_filter">
                         <div class="range_filter_title"> Стоимость в сутки (р):</div>
                         <div class="price_controls">
-                            <label class="min_price"> от
-                                <input type="text" name="min_price" value="0">
+                            <label class="min_price" for="min"> от
+                                <input type="text" name="min_price" value="0" id="min">
                             </label>
-                            <label class="max_price"> до
-                                <input type="text" name="max_price" value="3000">
+                            <label class="max_price" for="max"> до
+                                <input type="text" name="max_price" value="3000" id="max">
                             </label>
                         </div>
                         <div class="range_controls">
